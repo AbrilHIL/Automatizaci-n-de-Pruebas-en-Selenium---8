@@ -1,0 +1,33 @@
+##Verifica la instalación con este comando en Python:
+
+import selenium
+print(selenium.__version__)
+
+###Descarga y Configuración del WebDriver
+
+from selenium import webdriver
+
+# Abrir un navegador con ChromeDriver (aseguraR que este en el PATH o proporciona la ruta)
+driver = webdriver.Chrome()
+
+# Ir a Google
+driver.get("https://www.google.com")
+
+# Imprimir el título de la página
+print("Título de la página:", driver.title)
+
+# Cerrar el navegador
+driver.quit()
+
+
+###5. Configuración del PATH para WebDriver
+
+from selenium import webdriver
+
+# Especificar la ruta del WebDriver si no está en el PATH del sistema
+driver = webdriver.Chrome(executable_path="C:/ruta/del/webdriver/chromedriver.exe") #
+
+driver.get("https://www.google.com")
+print("Página cargada con éxito")
+
+driver.quit()
