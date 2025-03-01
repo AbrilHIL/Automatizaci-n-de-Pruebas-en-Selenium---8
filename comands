@@ -1,0 +1,24 @@
+python --version
+#o
+python3 --version
+
+
+  #Creación y activación de un entorno virtual
+python -m venv selenium_env
+
+#Activar el entorno virtual:
+#Windows:
+
+selenium_env\Scripts\activate
+
+#Para salir del entorno virtual:
+
+deactivate
+
+
+##Instalación de Selenium en Python
+#Ejecutamos este comando en la terminal dentro del entorno virtual:
+
+pip install selenium
+
+### EN EL OTRO DOCUMENTO SEGUIMOS EN EL PYTHON ###
